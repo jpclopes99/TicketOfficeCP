@@ -1,0 +1,40 @@
+﻿Public Class Form31
+    Private Sub Lbdata_Click(sender As Object, e As EventArgs) Handles Lbdata.Click
+        Lbdata.Text = Date.Today
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Label2.Text = TimeString
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Hide()
+        Form1.Show()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Me.Hide()
+        Form8.Show()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Form32.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Form56.Label7.Text = TextBox5.Text
+        Form56.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Form31_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Lbdata.Text = Date.Today
+        Label2.Text = TimeString
+
+    End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+
+    End Sub
+End Class
